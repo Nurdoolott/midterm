@@ -1,0 +1,103 @@
+body{
+    background-color: rgb(139, 126, 111);
+    
+}
+.galhome{
+    background-color: rgb(242,215,183);
+    width: 800px;
+    height: auto;
+    margin: auto;
+
+}
+.contactimages{
+    width: 100px;
+    height: 100px;
+}
+.galbody{
+    background-image: url(img/grapes.jpg);
+}
+.galh{
+    width: auto;
+}
+
+img{
+    display: flex;
+    border-radius: 50%;
+}
+h1{
+    text-align: center;
+}
+
+
+.prof{
+    background-color: brown;
+    border: 5px solid black;
+    width:250px;
+
+}
+.profj{
+    font-size: 30px;
+}
+.btn{
+    display: flex;
+    
+}
+
+#menu{
+    
+    justify-content: space-evenly;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+}
+#menu a {
+    text-decoration: none;
+    color: orange;
+    line-height: 1.5em;
+    transition: margin 0.2 ease-in-out;
+}
+
+#menu a:hover,
+#menu a:focus{
+    text-shadow: 0 0 5px rgb(29, 13, 13);
+    margin-left: 0.5em;
+    outline: none;
+    position: relative;
+}
+#menu a::before{
+    position: absolute;
+    left: -1em;
+    content:">";
+    color: transparent;
+
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:8px;
+}
+.box{
+    width: 350px;
+    background-color: rgb(232, 237, 237);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+
+    font-weight: 600;
+    box-shadow: 2px 4px 0 rgba(0, 0, 0, 0.2);
+    transform: translateX(0%);
+    transition: transform 0.4s ease-in-out;
+    
+}
+
+.box.show{
+    transform: translateX(0%);
+}
+
+.box:nth-of-type(all){
+    transform: translateX(0%);
+}
